@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{margin:0;}
+
+    /*
+block level element
+    */
+h1 {font-size: 40px; text-align: center; margin:0; padding:20px;
+  border-bottom:1px solid gray;
+  display: block;}
+  a {color: black; text-decoration: none;}
+ol{border-right: 1px solid gray;
+width: 100px; margin:0; padding:33px 0px 0px 33px;}
+#grid {display: grid;grid-template-columns: 150px 1fr;}
+#article {padding-left: 40px;}
+@media(max-width:800px){
+  #grid {
+    display: block;}
+  ol{border-right:none;}
+  h1 {border-bottom: none}
+}
+    /*
+block level element
+    */
+.cel {color:green;}
+#sel {color: red}
+    </style>
+</head>
+<body>
+<h1>보드게임의 정의</h1>
+<div id="grid">
+  <ol>
+  <li><a href="#" class="cel">가나다</a></li>
+  <li><a href="#" class="cel">라마바</a></li>
+  <li><a href="#" id="sel">사아자</a></li>
+  </ol>
+  <div id="article">
+    <h2>보드겜</h2>
+      <p>장르 문서에서도 볼 수 있듯, 보드 게임을 직접 분류하기에는 살짝 무리가 있다. 온라인 판매 사이트 등에서는 보드 게임의 장르를 구분해두긴 하지만, 대개의 보드 게임은 두 가지 이상을 함께 생각해야 한다. 예를 들자면, 경영게임에서 전략을 생각하지 않는 경영자가 어디 있겠는가. 그래서 요즘 들어서는 장르보다는 테마로 분류를 시도한다. 예를들어 기업간의 인수합병을 다루는 게임 '어콰이어'에서는 경영과 전략을 동시에 생각해야 하지만, 그 테마는 경제로 분류되는 것이다.
+      그런데 <a href="https://boardgamegeek.com/" target="_blank">보드게임긱</a>을 기준으로 보면, 전략은 장르와 테마(정확하게는 카테고리)에 모두 포함되지만, 경제는 테마에만 포함되어 있다. 그리고 하나의 게임이 다수의 장르, 다수의 테마에 모두 포함되는 경우 어디에 분류해야 할지도 문제이다. 황혼의 투쟁은 장르에 전략과 워게임이, 테마에 정치와 현대전이 포함된다. 이러면 이건 정치가 더 크다고 할 수 있을지도 모르겠는데, 아그리콜라의 경우는 이번엔 농경과 경제와 동물이다. 장르는 이번에도 전략이다. 아그리콜라에서 경제가 중요한지 농경이 중요한가 같은 문제가 시작되면 끝이 없다. 위의 게임들이 익숙하지 않다면 부루마블의 테마가 뭘지 생각해보자.
+      </p>
+  </div>
+</div>
+</body>
+</html>
